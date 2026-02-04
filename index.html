@@ -1,197 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>One Question 💌</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title>One Question 💌</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-body {
-  margin: 0;
-  height: 100vh;
-  background: linear-gradient(180deg, #fafafa, #f0f0f0);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(180deg, #fafafa, #f0f0f0);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
 
-/* PAGE 1 */
-.card {
-  background: #fff;
-  width: 360px;
-  border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-  text-align: center;
-  padding: 26px;
-  position: relative;
-}
+        /* PAGE 1 */
+        .card {
+            background: #fff;
+            width: 360px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            text-align: center;
+            padding: 26px;
+            position: relative;
+        }
 
-.header {
-  font-size: 14px;
-  color: #8e8e8e;
-  border-bottom: 1px solid #dbdbdb;
-  padding-bottom: 10px;
-  margin-bottom: 22px;
-}
+        .header {
+            font-size: 14px;
+            color: #8e8e8e;
+            border-bottom: 1px solid #dbdbdb;
+            padding-bottom: 10px;
+            margin-bottom: 22px;
+        }
 
-.profile {
-  width: 92px;
-  height: 92px;
-  border-radius: 50%;
-  background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf);
-  margin: 0 auto 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 34px;
-  font-weight: 700;
-}
+        .profile {
+            width: 92px;
+            height: 92px;
+            border-radius: 50%;
+            background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf);
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 34px;
+            font-weight: 700;
+        }
 
-h2 {
-  font-size: 21px;
-  margin: 12px 0 24px;
-}
+        h2 {
+            font-size: 21px;
+            margin: 12px 0 24px;
+        }
 
-.buttons {
-  position: relative;
-  height: 60px;
-}
+        .buttons {
+            position: relative;
+            height: 60px;
+        }
 
-button {
-  position: absolute;
-  padding: 12px 28px;
-  border-radius: 10px;
-  border: none;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
+        button {
+            position: absolute;
+            padding: 12px 28px;
+            border-radius: 10px;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
 
-.yes {
-  left: 0;
-  background: linear-gradient(135deg, #0095f6, #0077cc);
-  color: white;
-}
+        .yes {
+            left: 0;
+            background: linear-gradient(135deg, #0095f6, #0077cc);
+            color: white;
+        }
 
-.no {
-  right: 0;
-  background: #efefef;
-}
+        .no {
+            right: 0;
+            background: #efefef;
+        }
 
-.message {
-  margin-top: 22px;
-  font-size: 17px;
-  font-weight: 600;
-  min-height: 24px;
-  color: #ed4956;
-}
+        .message {
+            margin-top: 22px;
+            font-size: 17px;
+            font-weight: 600;
+            min-height: 24px;
+            color: #ed4956;
+        }
 
-/* PAGE 2 */
-.page2 {
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(circle, #fff0f5, #ffd6e8);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  overflow: hidden;
-}
+        /* PAGE 2 */
+        .page2 {
+            position: fixed;
+            inset: 0;
+            background: radial-gradient(circle, #fff0f5, #ffd6e8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
 
-.page2 h1 {
-  z-index: 2;
-  text-align: center;
-  font-size: 26px;
-  color: #d62976;
-  background: rgba(255,255,255,0.85);
-  padding: 18px 22px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
+        .page2 h1 {
+            z-index: 2;
+            text-align: center;
+            font-size: 26px;
+            color: #d62976;
+            background: rgba(255,255,255,0.85);
+            padding: 18px 22px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
 
-/* Flowers */
-.flower {
-  position: absolute;
-  animation: float 8s linear infinite;
-  opacity: 0.9;
-}
+        /* Flowers */
+        .flower {
+            position: absolute;
+            animation: float 8s linear infinite;
+            opacity: 0.9;
+        }
 
-@keyframes float {
-  0% { transform: translateY(100vh) rotate(0deg); }
-  100% { transform: translateY(-120vh) rotate(360deg); }
-}
-</style>
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-120vh) rotate(360deg); }
+        }
+    </style>
 </head>
 
 <body>
 
 <!-- PAGE 1 -->
 <div class="card" id="page1">
-  <div class="header">Private • Just for you</div>
-  <div class="profile">S</div>
-  <h2>Salina,<br>will you go out on a date with me? 💕</h2>
+    <div class="header">Private • Just for you</div>
+    <div class="profile">S</div>
+    <h2>Salina,<br>will you go out on a date with me? 💕</h2>
 
-  <div class="buttons">
-    <button class="yes" onclick="goYes()">Yes</button>
-    <button class="no" id="noBtn">No</button>
-  </div>
+    <div class="buttons">
+        <button class="yes" onclick="goYes()">Yes</button>
+        <button class="no" id="noBtn">No</button>
+    </div>
 
-  <div class="message" id="message"></div>
+    <div class="message" id="message"></div>
 </div>
 
 <!-- PAGE 2 -->
 <div class="page2" id="page2">
-  <h1>Okay, text me when to pick you up ❤️</h1>
+    <h1>Okay, text me when to pick you up ❤️</h1>
 </div>
 
 <script>
-/* No button runs away */
-const noBtn = document.getElementById("noBtn");
-noBtn.addEventListener("mouseenter", moveNo);
-noBtn.addEventListener("click", moveNo);
+    /* No button runs away */
+    const noBtn = document.getElementById("noBtn");
+    noBtn.addEventListener("mouseenter", moveNo);
+    noBtn.addEventListener("click", moveNo);
 
-function moveNo() {
-  const card = document.querySelector(".card");
-  const maxX = card.clientWidth - noBtn.offsetWidth;
-  const maxY = card.clientHeight - noBtn.offsetHeight;
+    function moveNo() {
+        const card = document.querySelector(".card");
+        const maxX = card.clientWidth - noBtn.offsetWidth;
+        const maxY = card.clientHeight - noBtn.offsetHeight;
 
-  noBtn.style.left = Math.random() * maxX + "px";
-  noBtn.style.top = Math.random() * maxY + "px";
+        noBtn.style.left = Math.random() * maxX + "px";
+        noBtn.style.top = Math.random() * maxY + "px";
 
-  document.getElementById("message").innerText =
-    "❌ Error: Please try again.";
-}
+        document.getElementById("message").innerText =
+            "❌ Error: Please try again.";
+    }
 
-/* YES -> Second page */
-function goYes() {
-  document.getElementById("page1").style.display = "none";
-  const page2 = document.getElementById("page2");
-  page2.style.display = "flex";
+    /* YES -> Second page */
+    function goYes() {
+        document.getElementById("page1").style.display = "none";
+        const page2 = document.getElementById("page2");
+        page2.style.display = "flex";
 
-  for (let i = 0; i < 180; i++) {
-    createFlower();
-  }
-}
+        for (let i = 0; i < 180; i++) {
+            createFlower();
+        }
+    }
 
-/* Flowers generator */
-function createFlower() {
-  const flower = document.createElement("div");
-  flower.className = "flower";
+    /* Flowers generator */
+    function createFlower() {
+        const flower = document.createElement("div");
+        flower.className = "flower";
 
-  const flowers = ["🌹","🌸","🌺","🌷","💐","🌼","🌻","🪷"];
-  flower.innerText = flowers[Math.floor(Math.random()*flowers.length)];
+        const flowers = ["🌹","🌸","🌺","🌷","💐","🌼","🌻","🪷"];
+        flower.innerText = flowers[Math.floor(Math.random()*flowers.length)];
 
-  flower.style.left = Math.random() * 100 + "%";
-  flower.style.fontSize = (18 + Math.random()*26) + "px";
-  flower.style.animationDuration = (6 + Math.random()*6) + "s";
+        flower.style.left = Math.random() * 100 + "%";
+        flower.style.fontSize = (18 + Math.random()*26) + "px";
+        flower.style.animationDuration = (6 + Math.random()*6) + "s";
 
-  document.getElementById("page2").appendChild(flower);
-}
+        document.getElementById("page2").appendChild(flower);
+    }
 </script>
 
 </body>
